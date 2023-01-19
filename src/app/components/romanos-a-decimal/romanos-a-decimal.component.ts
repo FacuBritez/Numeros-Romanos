@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { RomanosADecimalService } from 'src/app/services/romanos-a-decimal.service';
 
 @Component({
   selector: 'app-romanos-a-decimal',
@@ -7,7 +8,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class RomanosADecimalComponent implements OnInit {
 
-  constructor() { }
+  constructor(private _servicio:RomanosADecimalService) {
+  }
 
   ngOnInit(): void {
   }
