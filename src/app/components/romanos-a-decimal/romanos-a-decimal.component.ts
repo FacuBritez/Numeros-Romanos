@@ -8,7 +8,10 @@ import { RomanosADecimalService } from 'src/app/services/romanos-a-decimal.servi
 })
 export class RomanosADecimalComponent implements OnInit {
 
-  constructor(private _servicio:RomanosADecimalService) {
+  constructor(private _servicio:RomanosADecimalService) { }
+
+  prueba(){
+    console.log(this._servicio.convertToDecimal('XI'));
   }
 
   ngOnInit(): void {
