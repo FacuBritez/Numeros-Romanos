@@ -1,3 +1,3 @@
 <p>romanos-a-decimal works!</p>
-
-<button onclick="console.log(prueba())"></button>
+<input id="toDecimal" [(ngModel)]="numeroRomano" (keyup.enter)="this.romanosADecimalService.convertToDecimal(numeroRomano)">
+<button (click)="( ( this.romanosADecimalService.convertToDecimal(numeroRomano)) )"></button>

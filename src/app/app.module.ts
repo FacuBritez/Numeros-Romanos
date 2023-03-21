@@ -10,6 +10,7 @@ import { AppComponent } from './app.component';
 import { RomanosADecimalComponent } from './components/romanos-a-decimal/romanos-a-decimal.component';
 import { DecimalARomanosComponent } from './components/decimal-a-romanos/decimal-a-romanos.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { FooterComponent } from './components/footer/footer.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [
     DecimalARomanosService,

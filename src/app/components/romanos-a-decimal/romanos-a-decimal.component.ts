@@ -7,12 +7,14 @@ import { RomanosADecimalService } from 'src/app/services/romanos-a-decimal.servi
   styleUrls: ['./romanos-a-decimal.component.sass']
 })
 export class RomanosADecimalComponent implements OnInit {
-
-  constructor(private _servicio:RomanosADecimalService) { }
-
-  prueba(){
-    console.log(this._servicio.convertToDecimal('XI'));
+  
+  numeroRomano: string = '';
+  
+  constructor (public romanosADecimalService:RomanosADecimalService){
   }
+
+  public valor:any = document.getElementById("toDecimal");
+  
 
   ngOnInit(): void {
   }

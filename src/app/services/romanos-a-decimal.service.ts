@@ -7,7 +7,8 @@ export class RomanosADecimalService {
 
   constructor() { }
   
-  convertToDecimal(num: string) {
+
+  public convertToDecimal(num: string) {
     let numeroDecimal = 0;
     let numeroAnterior: number | null = null;
     let numeroActual: number;
@@ -53,7 +54,7 @@ export class RomanosADecimalService {
             numeroDecimal += numeroActual;
 
             // y actualizamos el numeroAnterior
-            numeroAnterior = numeroActual - numeroAnterior;
+            numeroAnterior = numeroActual /* - numeroAnterior  Creo que esto no va, pero para no borrarlo, lo comento*/;
           }
 
 
@@ -69,6 +70,6 @@ export class RomanosADecimalService {
         }
       }
     }
-    return numeroDecimal;
+    return console.log(numeroDecimal);
   }
 }
