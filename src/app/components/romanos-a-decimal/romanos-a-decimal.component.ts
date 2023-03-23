@@ -9,6 +9,11 @@ import { RomanosADecimalService } from 'src/app/services/romanos-a-decimal.servi
 export class RomanosADecimalComponent implements OnInit {
   
   numeroRomano: string = '';
+  decimalResult: number = 0;
+
+  actualiza(numeroRomano: string) { 
+    this.decimalResult = this.romanosADecimalService.convertToDecimal(numeroRomano);
+  }
   
   constructor (public romanosADecimalService:RomanosADecimalService){
   }

@@ -70,6 +70,6 @@ export class RomanosADecimalService {
         }
       }
     }
-    return console.log(numeroDecimal);
+    return numeroDecimal /*console.log(numeroDecimal)*/;
   }
 }
