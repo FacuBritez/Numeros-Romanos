@@ -18,9 +18,6 @@ export class RomanosADecimalComponent implements OnInit {
   constructor (public romanosADecimalService:RomanosADecimalService){
   }
 
-  public valor:any = document.getElementById("toDecimal");
-  
-
   ngOnInit(): void {
   }
 
