@@ -5,10 +5,10 @@ import { Injectable } from '@angular/core';
 })
 export class DecimalARomanosService {
 
-  constructor() {
+  constructor() { }
 
 
-    function convertToRoman(num: number) {
+  public convertToRoman(num: number) {
       let numeroRomano = "";
       let numerosRomanos: [string, number][] = [
         ["M", 1000],
@@ -37,5 +37,4 @@ export class DecimalARomanosService {
       }
       return numeroRomano;
     }
-  }
 }

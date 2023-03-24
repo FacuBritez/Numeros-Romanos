@@ -1,3 +1,4 @@
-<p>decimal-a-romanos works!</p>
-
-<button onclick="convertToRoman(36)"></button>
+<p>Decimal a Romanos</p>
+<input [(ngModel)]="numeroDecimal" (keyup.enter)="actualiza(numeroDecimal)">
+<button (click)="( actualiza(numeroDecimal) )">Convertir a Romano</button>
+<input [(ngModel)]="romanResult">
