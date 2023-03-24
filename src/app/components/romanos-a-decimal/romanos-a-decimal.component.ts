@@ -12,7 +12,7 @@ export class RomanosADecimalComponent implements OnInit {
   decimalResult: number = 0;
 
   actualiza(numeroRomano: string) { 
-    this.decimalResult = this.romanosADecimalService.convertToDecimal(numeroRomano);
+    this.decimalResult = this.romanosADecimalService.convertToDecimal(numeroRomano.toUpperCase());
   }
   
   constructor (public romanosADecimalService:RomanosADecimalService){
