@@ -1,10 +1,8 @@
-<div class="centrado">
-    <div class="container text-center">
-        <h1>Romanos a Decimal</h1>
-        <input [(ngModel)]="numeroRomano" (keyup.enter)="actualiza(numeroRomano)" placeholder="Numero romano">
-        <br>
-        <button (click)="( actualiza(numeroRomano) )">Convertir a decimal</button>
-        <br>
-        <input [(ngModel)]="decimalResult" placeholder="Numero decimal">
-    </div>
+<div class="conversor text-center">
+    <p>Romanos a Decimal</p>
+    <input [(ngModel)]="numeroRomano" (keyup.enter)="actualiza(numeroRomano)" placeholder="Numero romano">
+    <br>
+    <button (click)="( actualiza(numeroRomano) )">Convertir a decimal</button>
+    <br>
+    <input [(ngModel)]="decimalResult" placeholder="Numero decimal">
 </div>
