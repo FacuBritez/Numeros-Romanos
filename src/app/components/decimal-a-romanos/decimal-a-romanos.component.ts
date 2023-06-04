@@ -8,11 +8,15 @@ import { DecimalARomanosService } from 'src/app/services/decimal-a-romanos.servi
 })
 export class DecimalARomanosComponent implements OnInit {
 
-  numeroDecimal: number = 0;
+  numeroDecimal: number | null = null;
   romanResult: string = '';
 
-  actualiza(numeroDecimal: number) { 
-    this.romanResult = this.decimalARomanosService.convertToRoman(numeroDecimal);
+  actualiza(numeroDecimal: number | null) {
+    if (numeroDecimal){
+      this.romanResult = this.decimalARomanosService.convertToRoman(numeroDecimal);
+    } else {
+      this.romanResult = '';
+    }
   }
 
   constructor(public decimalARomanosService:DecimalARomanosService) { }
