@@ -1,4 +1,4 @@
-h1{color:#fff}.centrado{display:flex;align-items:center;justify-content:center;height:100vh}.container{background:darkgreen}@charset "UTF-8";/*!
+.conversor{background:white;border:1px solid grey;border-radius:5px;margin-top:20px}.conversor p{background-color:#def1d8;border-radius:5px;font-size:20px}.conversor input,.conversor button{margin-bottom:10px}.conversor button{border-radius:5px;border:none;background-color:#5cb95b;color:#fff}.conversor input{border:1px solid grey}@charset "UTF-8";/*!
  * Bootstrap  v5.2.3 (https://getbootstrap.com/)
  * Copyright 2011-2022 The Bootstrap Authors
  * Copyright 2011-2022 Twitter, Inc.
