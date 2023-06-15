@@ -4,10 +4,6 @@ import { Injectable } from '@angular/core';
   providedIn: 'root'
 })
 export class DecimalARomanosService {
-
-  constructor() { }
-
-
   public convertToRoman(num: number) {
       let numeroRomano = "";
       let numerosRomanos: [string, number][] = [
@@ -36,8 +32,8 @@ export class DecimalARomanosService {
         return ""
       }
 
+      //Itera sobre los array de numeros romanos y sus valores en decimal [string,number]
       for (let i = 0; i < numerosRomanos.length; i++) {
-
         for (let j = 3; j > 0; j--) {
           if (num >= numerosRomanos[i][1]) {
             numeroRomano += numerosRomanos[i][0];
