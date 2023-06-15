@@ -14,11 +14,10 @@ export class DecimalARomanosComponent implements OnInit {
   romanResult: string = '';
 
   actualiza(numeroDecimal: number | null) {
-    if (numeroDecimal){
-      this.romanResult = this.decimalARomanosService.convertToRoman(numeroDecimal);
-    } else {
-      this.romanResult = '';
-    }
+    //numeroDecimal null
+    if (!numeroDecimal) return this.romanResult = '';
+    //numeroDecimal number
+    return this.romanResult = this.decimalARomanosService.convertToRoman(numeroDecimal);
   }
 
   ngOnInit(): void {
