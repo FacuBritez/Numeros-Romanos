@@ -25,6 +25,16 @@ export class DecimalARomanosService {
         ["IV", 4],
         ["I", 1]
       ];
+      
+      //Limitando el rango del imput
+      if (num < 1) {
+        console.log("El numero no puede ser menor a 1")
+        return ""
+      }
+      if (num > 3999) {
+        console.log("El numero no puede ser mayor a 3999")
+        return ""
+      }
 
       for (let i = 0; i < numerosRomanos.length; i++) {
 
