@@ -8,6 +8,8 @@ import { RomanosADecimalService } from 'src/app/services/romanos-a-decimal.servi
 })
 export class RomanosADecimalComponent implements OnInit {
   
+  constructor (public romanosADecimalService:RomanosADecimalService){ }
+
   numeroRomano: string = '';
   decimalResult: string | null = null;
 
@@ -15,9 +17,6 @@ export class RomanosADecimalComponent implements OnInit {
     this.decimalResult = this.romanosADecimalService.convertToDecimal(numeroRomano);    
   }
   
-  constructor (public romanosADecimalService:RomanosADecimalService){
-  }
-
   ngOnInit(): void {
   }
 
