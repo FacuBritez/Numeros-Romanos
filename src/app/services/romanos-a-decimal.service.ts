@@ -5,10 +5,8 @@ import { Injectable } from '@angular/core';
 })
 export class RomanosADecimalService {
 
-  constructor() { }
-  
-
   public convertToDecimal(num: string) {
+
     let numeroDecimal = 0;
     let numeroAnterior: number | null = null;
     let numeroActual: number;
@@ -22,6 +20,16 @@ export class RomanosADecimalService {
       ["V", 5],
       ["I", 1]
     ];
+
+    //Restricciones
+
+    //Num no puede tener caracteres que no son numeros romanos
+
+    //Num no puede tener más de tres "M" "C" "X" o "I" seguidas
+
+    //Num no puede tener más de 1 "D" "L" o "V" seguidas
+
+
 
     //recorre el string num
     for (let i = 0; i < num.length; i++) {
