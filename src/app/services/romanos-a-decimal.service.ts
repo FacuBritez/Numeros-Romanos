@@ -22,14 +22,11 @@ export class RomanosADecimalService {
     ];
 
     //Restricciones
-
-    //Num no puede tener caracteres que no son numeros romanos
-
-    //Num no puede tener más de tres "M" "C" "X" o "I" seguidas
-
-    //Num no puede tener más de 1 "D" "L" o "V" seguidas
-
-
+    /*
+    if ( /^( miles )( centenas )( decenas )( unidades )$/.test(num) ) {
+      return ""
+    }
+    */
 
     //recorre el string num
     for (let i = 0; i < num.length; i++) {
@@ -78,6 +75,6 @@ export class RomanosADecimalService {
         }
       }
     }
-    return numeroDecimal /*console.log(numeroDecimal)*/;
+    return numeroDecimal;
   }
 }
