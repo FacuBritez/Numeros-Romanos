@@ -6,6 +6,15 @@ import { Injectable } from '@angular/core';
 export class RomanosADecimalService {
 
   public convertToDecimal(num: string) {
+    //Para que acepte minusculas
+    num = num.toUpperCase()
+    
+    
+    //Restricciones
+    //      MILES      CENTENAS        DECENAS         UNIDADES
+    if (!/^(M{0,3})(CM|CD|D?C{0,3})(XC|XL|L?X{0,3})(IX|IV|V?I{0,3})$/.test(num)) {
+      return 0
+    }
 
     let numeroDecimal = 0;
     let numeroAnterior: number | null = null;
@@ -20,12 +29,6 @@ export class RomanosADecimalService {
       ["V", 5],
       ["I", 1]
     ];
-
-    //Restricciones
-    //      MILES      CENTENAS        DECENAS         UNIDADES
-    if (!/^(M{0,3})(CM|CD|D?C{0,3})(XC|XL|L?X{0,3})(IX|IV|V?I{0,3})$/.test(num) ) {
-      return 0
-    }
 
     //recorre el string num
     for (let i = 0; i < num.length; i++) {
