@@ -77,6 +77,6 @@ export class RomanosADecimalService {
         }
       }
     }
-    return numeroDecimal.toString();
+    return numeroDecimal === 0 ? '' : numeroDecimal.toString();
   }
 }
